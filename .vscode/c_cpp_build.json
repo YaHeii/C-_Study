@@ -1,0 +1,60 @@
+{
+	"version": 1,
+	"params": {
+		"buildDir": "build",
+		"buildOutput": "${buildDir}/${configName}/${buildTypeName}",
+		"defines": [
+			"$${defines}",
+			"UNICODE",
+			"_UNICODE"
+		],
+		"debugDefines": [
+			"_DEBUG",
+			"DEBUG"
+		],
+		"includePath": [
+			"$${includePath}",
+			"${workspaceRoot}/**"
+		]
+	},
+	"configurations": [
+		{
+			"name": "Win32",
+			"buildTypes": [
+				{
+					"name": "debug",
+					"params": {
+						"buildTypeParams": "-O0 -g",
+						"defines": [
+							"$${defines}",
+							"$${debugDefines}"
+						]
+					}
+				},
+				{
+					"name": "release",
+					"params": {
+						"buildTypeParams": "-O2 -g0"
+					}
+				}
+			],
+			"buildSteps": [
+				{
+					"name": "C++ Compile Sample Step",
+					"filePattern": "**/*.cpp",
+					"outputFile": "${buildOutput}/${fileDirectory}/${fileName}.o",
+					"command": "g++ -c -std=c++17 ${buildTypeParams} (-I[$${includePath}]) (-D$${defines}) (-include [$${forcedInclude}]) [${filePath}] -o [${outputFile}]",
+					"trimIncludePaths": true
+				},
+				{
+					"name": "C++ Link Sample Step",
+					"fileList": "${buildOutput}/**/*.o",
+					"command": "g++ [$${filePath}] -o [${buildOutput}/main.exe]"
+				}
+			],
+			"problemMatchers": [
+				"$gcc"
+			]
+		}
+	]
+}

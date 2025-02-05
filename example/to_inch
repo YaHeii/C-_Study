@@ -1,0 +1,22 @@
+#include <iostream>
+
+using std :: cin;
+using std :: cout;
+using std :: endl;
+
+int main(){
+    const int inches_per_foot = 12;
+    const int feet_per_yard = 3;
+    int yards = 0;
+    int feet = 0;
+    int inches = 0;
+
+    cout << "enter a length as yards .feet, amd inches:";
+    cin >>yards>>feet>>inches; 
+    
+    cout << endl
+         << "lis"
+         << inches + inches_per_foot *(feet+feet_per_yard*yards)
+         << endl;
+    return 0;
+}

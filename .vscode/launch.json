@@ -1,0 +1,27 @@
+
+{
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "C++ Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/function object/predicate.exe", //${workspaceFolder}是路径除执行文件外其他D:\C++_study\caishuzi\guess.cpp
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}", // 工作目录
+            "environment": [],        //环境有则需要配置，无则无需管
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            //"preLaunchTask": "build",
+            "miDebuggerPath": "D:\\MINGW64\\bin\\gdb.exe"
+        }
+    ]
+}
