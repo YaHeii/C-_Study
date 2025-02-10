@@ -7,10 +7,11 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${workspaceFolder}/function object/predicate.cpp",
-                //"${workspaceFolder}/template/sub_document preparation/person.cpp",
+                "${workspaceFolder}/example/Machine Room Reservation System/main.cpp",
+                "${workspaceFolder}/example/Machine Room Reservation System/student_teacher_manager.cpp",
+                //"${workspaceFolder}/example/speech contest/speaker.cpp",
                 "-o",
-                "${workspaceFolder}/function object/predicate.exe"
+                "${workspaceFolder}/example/Machine Room Reservation System/main.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"

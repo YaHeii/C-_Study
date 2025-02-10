@@ -6,7 +6,7 @@
             "name": "C++ Debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/function object/predicate.exe", //${workspaceFolder}是路径除执行文件外其他D:\C++_study\caishuzi\guess.cpp
+            "program": "${workspaceFolder}/example/Machine Room Reservation System/main.exe", //${workspaceFolder}是路径除执行文件外其他D:\C++_study\caishuzi\guess.cpp
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}", // 工作目录

@@ -43,7 +43,10 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "ctime": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "map": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "npm.runInTerminal": true
